@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | Judo Arg</title>
+    <script src="https://kit.fontawesome.com/2d1be7e99b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header style="background-color: darkgray">
+        <nav>
+            <a href="../index.html" style="color: white">| Home |</a>
+            <a href="about_us.html" style="color: white">| About Us|</a>
+            <a href="contacts.html" style="color: black">| Contacts |</a>            
+        </nav>
+        <h1 style="text-align: center">Judo Argentina</h1>
+    </header>
+    
+    <section>
+        <form action="show_data.html" target="_blank">
+            <fieldset>
+                <h3>Regístrate</h3>
+                <legend>Registrate y deja tu comentario:</legend>
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="fname" required maxlength="30" placeholder="escribe aquí tu nombre"><br><br>
+                <label for="surname">Apellido:</label>
+                <input type="text" id="surname" name="surname" required maxlength="30" placeholder="escribe aquí tu apellido"><br><br>
+                <label for="birthday">Fecha de nacimiento:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="hombre" name="gender" value="hombre" checked>
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="mujer" name="gender" value="mujer">
+                <label for="otro">Binario</label>
+                <input type="radio" id="otro" name="gender" value="otro" ><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <h4>Sube tu foto de perfil</h4>
+                <label for="file">Elegir archivo</label>
+                <input type="file" accept="image/*,.pdf" id="file" name="file"><br><br>
+                <h4>Tu música favorita</h4>
+                <label for="rock">Rock</label>
+                <input type="checkbox" id="rock" name="rock" checked>
+                <label for="pop">Pop</label>
+                <input type="checkbox" id="pop" name="pop">
+                <label for="trap">Trap</label>
+                <input type="checkbox" id="trap" name="trap">
+                <h4>Y tu color favorito?</h4>
+                <input type="color" id="color" name="color"><br><br>
+                <h4>Dirección</h4>
+                <label for="city">Tu Ciudad</label>
+                <select name="city">
+                    <optgroup label="Ciudad" id="city" name="city">
+                        <option value="#">Selecciona</option>
+                        <option value="C.A.B.A.">C.A.B.A.</option>
+                        <option value="Pergamino">Pergamino</option>
+                        <option value="Rosario">Rosario</option>
+                    </optgroup>
+                </select>
+                <label for="provincia">Tu Provincia</label>
+                <select name="provincia">
+                    <optgroup label="Provincia" id="provincia" name="provincia">
+                        <option value="#">Selecciona</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="otra">Tierra del Fuego</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <h4>Tu opinión nos interesa</h4>
+                <textarea name="coment" id="coment" cols="38" rows="15" required placeholder="comenta aquí"></textarea><br>
+                <input type="reset" value="Borrar todo">
+                <input type="submit" value="Enviar"><br><br>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer style="background-color: darkgray; text-align: center;">
+        <br>
+        <a href="https://es-la.facebook.com/judoargentina/" target="_blank">
+            <i class="fab fa-facebook fa-3x" style="color: #4267b2"></i>
+        </a>
+                
+        <a href="https://www.youtube.com/watch?v=pB4Cc_R6Cgk" target="_blank">
+            <img src="../icons/deportv.jpg" width="40" alt="icono deportv">
+            <i class="fab fa-youtube-square fa-3x" style="color: red"></i>
+        </a>
+        
+        <a href="https://www.instagram.com/judonoticias/" target="_blank">
+            <i class="fab fa-instagram-square fa-3x" style="color: #833ab4"></i>
+        </a>
+        
+        <br>
+        
+        <p style="text-align: center">Todos los derechos reservados @2020</p>
+    </footer>
+
+</body>
+</html>
